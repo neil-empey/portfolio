@@ -1,0 +1,118 @@
+body {
+  background-color: black;
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.contact-body {
+  background: url(https://res.cloudinary.com/argustwo/image/upload/v1628407633/q4rzyr6oitjnhsyntrsa.jpg) repeat-x;
+  margin-top: 1px;
+  top: 4%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+ 
+}
+
+.panel-default {
+  opacity: 0.9;
+  margin-top:30px;
+  }
+
+  .contact-h2 {
+    text-align: center;
+  }
+
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+
+
+
+  .pizza {
+    color: black;
+    z-index: 0;
+  }
+
+  section {
+    background-color: black;
+  }
+
+  .navigation {
+    display: flex;
+    
+    /* This aligns items to the end line on main-axis */
+    justify-content: flex-end;
+  }
+  
+  /* Medium screens */
+  @media all and (max-width: 800px) {
+    .navigation {
+      /* When on medium sized screens, we center it by evenly distributing empty space around items */
+     
+    }
+  }
+  
+  /* Small screens */
+  @media all and (max-width: 500px) {
+    .navigation {
+      /* On small screens, we are no longer using row direction but column */
+      
+    }
+  }
+}
