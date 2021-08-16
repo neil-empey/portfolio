@@ -35,8 +35,7 @@ export default function contact() {
                                     <div class="d-none" id="submitSuccessMessage">
                                         <div class="text-center mb-3">
                                             <div class="fw-bolder">Form submission successful!</div>
-                                            <p>To activate this form, sign up at</p>
-                                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                            <p><strong>SUCCESS</strong></p>
                                         </div>
                                     </div>
                                     <div class="d-none" id="submitErrorMessage">
