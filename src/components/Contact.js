@@ -28,7 +28,7 @@ export default function contact() {
                                         <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <textarea class="form-control" id="message" type="text" placeholder="Message"  data-sb-validations="required"></textarea>
+                                        <textarea class="form-control" id="message" type="text" placeholder="Message" data-sb-validations="required"></textarea>
                                         <label for="message">Message</label>
                                         <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
                                     </div>
@@ -43,14 +43,14 @@ export default function contact() {
                                         <div class="text-center text-danger mb-3">Error sending message!</div>
                                     </div>
                                     <div class="d-grid">
-                                        <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+                                        <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>
                                     </div>
                                 </form>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div >
 
 
