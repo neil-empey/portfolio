@@ -15,7 +15,7 @@ export default function contact() {
                         <div class="panel-body">
 
                             <div class="container px-5 my-5">
-
+                           
                                 <form id="contactForm" data-sb-form-api-token="5e423b3d-0a8b-49e9-8f8f-d472ea3c678a">
                                     <div class="mb-3">
                                         <label class="form-label" for="name">Name</label>
@@ -44,7 +44,7 @@ export default function contact() {
                                         <div class="text-center text-danger mb-3">Error sending message!</div>
                                     </div>
                                     <div class="d-grid">
-                                        <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+                                        <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>
                                     </div>
                                 </form>
 
