@@ -35,7 +35,7 @@ export default function contact() {
                                     <div class="d-none" id="submitSuccessMessage">
                                         <div class="text-center mb-3">
                                             <div class="fw-bolder">Form submission successful!</div>
-                                            <p><strong>SUCCESS</strong></p>
+                                            <h2 className="text-danger"><strong>SUCCESS</strong></h2>
                                         </div>
                                     </div>
                                     <div class="d-none" id="submitErrorMessage">
