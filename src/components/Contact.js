@@ -15,22 +15,21 @@ export default function contact() {
                         <div class="panel-body">
 
                             <div class="container px-5 my-5">
-                           
                                 <form id="contactForm" data-sb-form-api-token="5e423b3d-0a8b-49e9-8f8f-d472ea3c678a">
-                                    <div class="mb-3">
-                                        <label class="form-label" for="name">Name</label>
+                                    <div class="form-floating mb-3">
                                         <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+                                        <label for="name">Name</label>
                                         <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
                                     </div>
-                                    <div class="mb-3">
-                                        <label class="form-label" for="emailAddress">Email Address</label>
+                                    <div class="form-floating mb-3">
                                         <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                                        <label for="emailAddress">Email Address</label>
                                         <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
                                         <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
                                     </div>
-                                    <div class="mb-3">
-                                        <label class="form-label" for="message">Message</label>
-                                        <textarea class="form-control" id="message" type="text" placeholder="Message" data-sb-validations="required"></textarea>
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+                                        <label for="message">Message</label>
                                         <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
                                     </div>
                                     <div class="d-none" id="submitSuccessMessage">
@@ -44,18 +43,15 @@ export default function contact() {
                                         <div class="text-center text-danger mb-3">Error sending message!</div>
                                     </div>
                                     <div class="d-grid">
-                                        <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>
+                                        <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
                                     </div>
                                 </form>
-
-                                <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div >
 
 
 
